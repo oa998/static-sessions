@@ -6,7 +6,11 @@
 </script>
 
 <div class="flex flex-col max-w-[100px] gap-3">
-	<form method="POST" use:enhance={login}>
+	<form
+		method="POST"
+		action="https://nginx-anything-storage-glovbogi2a-uc.a.run.app/auth/login"
+		use:enhance={login}
+	>
 		<input type="text" id="username" name="username" hidden value="bbb@bbb.com" />
 		<input type="text" id="password" name="password" hidden value="bbbbbb" />
 		<button type="submit">Sign In</button>
