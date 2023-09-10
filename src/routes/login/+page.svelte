@@ -8,18 +8,18 @@
 <div class="flex flex-col max-w-[100px] gap-3">
 	<form
 		method="POST"
-		action="https://nginx-anything-storage-glovbogi2a-uc.a.run.app/auth/login"
+		action="https://anything-storage-glovbogi2a-uc.a.run.app/auth/login"
 		use:enhance={login}
 	>
 		<input type="text" id="username" name="username" hidden value="bbb@bbb.com" />
 		<input type="text" id="password" name="password" hidden value="bbbbbb" />
-		<button type="submit">Sign In</button>
+		<button type="submit">Sign In2</button>
 	</form>
 
 	<button
 		on:click={() => {
 			console.log('getit');
-			fetch('https://nginx-anything-storage-glovbogi2a-uc.a.run.app/app', {
+			fetch('https://anything-storage-glovbogi2a-uc.a.run.app/auth/login', {
 				method: 'GET',
 				credentials: 'include'
 			})
