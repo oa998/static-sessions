@@ -1,14 +1,11 @@
 <script lang="ts">
-	import { applyAction, enhance } from '$app/forms';
-	import type { ActionResult } from '@sveltejs/kit';
+	import { enhance } from '$app/forms';
 	const login = () => {
-		return async ({ result }: { result: ActionResult }) => {
-			await applyAction(result);
-		};
+		return async () => {};
 	};
 </script>
 
-<div class="flex flex-col max-w-sm">
+<div class="flex flex-col max-w-[100px] gap-3">
 	<form method="POST" use:enhance={login}>
 		<input type="text" id="username" name="username" hidden value="bbb@bbb.com" />
 		<input type="text" id="password" name="password" hidden value="bbbbbb" />
@@ -16,7 +13,6 @@
 	</form>
 
 	<button
-		class="w-full bg-blue-400 p-5"
 		on:click={() => {
 			console.log('getit');
 			fetch('https://nginx-anything-storage-glovbogi2a-uc.a.run.app/app', {
@@ -29,3 +25,9 @@
 		}}>Get It</button
 	>
 </div>
+
+<style>
+	button {
+		@apply border border-black rounded-lg p-3 w-full;
+	}
+</style>
