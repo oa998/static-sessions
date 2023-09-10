@@ -19,7 +19,7 @@ export default {
 			'$components/*': 'src/components'
 		},
 		paths: {
-			base: '/fewer-pieces'
+			base: '/static-sessions'
 		}
 	},
 	preprocess: vitePreprocess()
