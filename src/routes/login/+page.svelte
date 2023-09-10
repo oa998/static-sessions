@@ -11,7 +11,7 @@
 		action="https://anything-storage-glovbogi2a-uc.a.run.app/auth/login"
 		use:enhance={login}
 	>
-		<input type="text" id="username" name="username" hidden value="bbb@bbb.com" />
+		<input type="text" id="email" name="email" hidden value="bbb@bbb.com" />
 		<input type="text" id="password" name="password" hidden value="bbbbbb" />
 		<button type="submit">Sign In2</button>
 	</form>
