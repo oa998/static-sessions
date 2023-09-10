@@ -17,10 +17,10 @@ export default {
 			// this will match a file
 			'$gameplay/*': 'src/gameplay',
 			'$components/*': 'src/components'
-		},
-		paths: {
-			base: '/static-sessions'
 		}
+		// paths: {
+		// 	base: '/static-sessions'
+		// }
 	},
 	preprocess: vitePreprocess()
 };

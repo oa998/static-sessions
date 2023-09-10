@@ -1,8 +1,6 @@
 <div class="h-[100vh] w-full p-10">
-	<a class="border border-black p-3 text-black" href="/static-sessions/nemesis"> Nemesis </a>
-	<a class="border border-black p-3 text-black" href="/static-sessions/aeon-legends">
-		Aeon Legends
-	</a>
+	<a class="border border-black p-3 text-black" href="/nemesis"> Nemesis </a>
+	<a class="border border-black p-3 text-black" href="/aeon-legends"> Aeon Legends </a>
 </div>
 
 <style>
