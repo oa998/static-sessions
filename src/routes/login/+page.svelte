@@ -6,15 +6,32 @@
 </script>
 
 <div class="flex flex-col max-w-[100px] gap-3">
-	<form
+	<!-- <form
 		method="POST"
 		action="https://anything-storage-glovbogi2a-uc.a.run.app/auth/login"
 		use:enhance={login}
+	> -->
+	<input type="text" id="email" name="email" hidden value="bbb@bbb.com" />
+	<input type="text" id="password" name="password" hidden value="bbbbbb" />
+	<!-- <button type="submit">Sign In asg</button> -->
+	<button
+		on:click={() => {
+			fetch('https://anything-storage-glovbogi2a-uc.a.run.app/auth/login', {
+				method: 'POST',
+				headers: {
+					accept: 'application/json',
+					['content-type']: 'application/json'
+				},
+				body: JSON.stringify({
+					username: 'bbb@bbb.com',
+					password: 'bbbbbb',
+					loc: 'ui'
+				}),
+				credentials: 'include'
+			});
+		}}>Sign In asg</button
 	>
-		<input type="text" id="email" name="email" hidden value="bbb@bbb.com" />
-		<input type="text" id="password" name="password" hidden value="bbbbbb" />
-		<button type="submit">Sign In asg</button>
-	</form>
+	<!-- </form> -->
 
 	<form
 		method="POST"
