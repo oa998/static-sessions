@@ -33,6 +33,24 @@
 	>
 	<!-- </form> -->
 
+	<button
+		on:click={() => {
+			fetch('https://nginx-anything-storage-glovbogi2a-uc.a.run.app/auth/login', {
+				method: 'POST',
+				headers: {
+					accept: 'application/json',
+					['content-type']: 'application/json'
+				},
+				body: JSON.stringify({
+					username: 'bbb@bbb.com',
+					password: 'bbbbbb',
+					loc: 'ui'
+				}),
+				credentials: 'include'
+			});
+		}}>Sign In nginx</button
+	>
+
 	<form
 		method="POST"
 		action="https://nginx-anything-storage-glovbogi2a-uc.a.run.app/auth/login"
@@ -40,7 +58,7 @@
 	>
 		<input type="text" id="email" name="email" hidden value="bbb@bbb.com" />
 		<input type="text" id="password" name="password" hidden value="bbbbbb" />
-		<button type="submit">Sign In nginx</button>
+		<button type="submit">form Sign In nginx</button>
 	</form>
 
 	<button
