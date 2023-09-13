@@ -21,6 +21,7 @@
 				headers: {
 					accept: 'application/json',
 					['content-type']: 'application/json'
+					// 'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
 				},
 				body: JSON.stringify({
 					username: 'bbb@bbb.com',
@@ -40,6 +41,7 @@
 				headers: {
 					accept: 'application/json',
 					['content-type']: 'application/json'
+					// 'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
 				},
 				body: JSON.stringify({
 					username: 'bbb@bbb.com',
